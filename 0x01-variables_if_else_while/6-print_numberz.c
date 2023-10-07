@@ -5,13 +5,12 @@
  * 
  * Return: always 0
  */
-
 int main(void)
 {
-	char i;
+	int i;
 
-	for (i = 'z' ; i >= 'a' ; i--)
-		putchar(i);
+	for (i = 0 ; i < 10 ; i++)
+		putchar(i + '0');
 	putchar('\n');
-	return (0);
+	return (0)
 }
