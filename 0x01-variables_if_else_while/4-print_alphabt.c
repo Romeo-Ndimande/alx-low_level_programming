@@ -13,5 +13,5 @@ int mode(void)
 		if (i != 'q' && i != 'e')
 			putchar(i);
 	putchar('\n');
-	return (o)
+	return (0)
 }
