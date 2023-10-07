@@ -11,7 +11,7 @@ int mode(void)
 
 	for (i = 'a' ; i <= 'z' ; i++)
 		if (i != 'q' && i != 'e')
-			pitchar(i);
-	putchar("\n");
+			putchar(i);
+	putchar('\n');
 	return (o)
 }
