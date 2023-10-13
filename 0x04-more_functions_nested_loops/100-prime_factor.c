@@ -6,23 +6,32 @@
  */
 int main(void)
 {
-	long prime = 612852475143, divisor;
+	long int n;
+	long int max;
+	long int i;
 
-	while (divisor < (prime / 2))
+	n = 612852475143;
+	max = -1;
+
+	while (n % 2 == 0)
 	{
-		if ((prime % 2) == 0)
-		{
-			(prime /= 2);
-			continue;
-		}
+		max = 2;
+		n /= 2;
+	}
 
-		for (divisor = 3; divisor (prime / 2); divisor += 2)
+	for (i = 3; i <= sqrt(n); i = i + 2)
+	{
+		while (n % i == 0)
 		{
-			if ((prime % divisor) == 0)
-				prime /= divisor;
+		max = i;
+		n = n / i;
 		}
 	}
-	printf("%d\n", prime);
 
-	return (0);
+	if (n > 2)
+		max = n;
+	printf("%d\n", max );
+
+	return (0)
+}
 }
