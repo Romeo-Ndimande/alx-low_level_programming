@@ -9,7 +9,7 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-	return (_prime(n, n - 1));	
+	return (is_prime_number(n, n - 1));	
 }
 /**
  * _prime_number - determines if number is a prime number or not
