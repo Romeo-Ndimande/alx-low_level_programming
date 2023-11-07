@@ -24,28 +24,36 @@ int check_num(char *str)
 		return (1);
 	}
 
-/**
- * main - Print the name of the program
- * @argc: Count arguments
- * @argv: Arguments
- *
- * Return: Always 0 (Success)
- */
-int main(int argc, char *argv[])
 
-{
-	int count;
-	int str_to_int;
-	int sum = 0;
+	/**
+	 * main - Print the name of the program
+	 * @argc: Count arguments
+	 * @argv: Arguments
+	 *
+	 * Return: Always 0 (Success)
+	 */
 
-	count = 1;
-	while (count < argc)
+
+	int main(int argc, char *argv[])
+
+
 	{
-		if (check_num(argv[count]))
+
+		int count;
+		int str_to_int;
+		int sum = 0;
+
+		count = 1;
+		while (count < argc)
 		{
-			str_to_int = atoi(argv[count]); 
-			sum += str_to_int;
-		}
+			if (check_num(argv[count]))
+
+
+			{
+				str_to_int = atoi(argv[count]);
+				sum += str_to_int;
+			}
+
 		else
 		{
 			printf("Error\n");
