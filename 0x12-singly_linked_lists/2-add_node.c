@@ -27,5 +27,28 @@ list_t *add_node(list_t **head, const char *str)
 		new_node->len = len(str);
 		*head = new_node;
 	}
-
+	return (new_node);
 }
+
+list_t *add_node(list_t **head, const char *str);
+
+/**
+ * len - determines the lenth of a string
+ * @str: the string whose length will be determined
+ * Return: the length of a string
+ */
+int len(const char *str)
+{
+	int i;
+
+	if (str == NULL)
+		return (0);
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
