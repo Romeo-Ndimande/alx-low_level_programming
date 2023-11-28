@@ -11,16 +11,17 @@
 	int rwr;
 
 	if (!filename)
-		return(-1);
+		return (-1);
 	fildes = open(filename, O_WRONLY, | O_APPEND);
 	if (fildes == -1)
 		return (-1);
 	if (text_content)
 	{
-		for (nletters = 0; text_content[nletters]; nlettters++);
-		rwr = write(fildes; text_content; nletters);
-		if (rwr == -1)
-			return (-1);
+		for 
+			(nletters = 0; text_content[nletters]; nlettters++);
+			rwr = write(fildes; text_content; nletters);
+			if (rwr == -1)
+				return (-1);
 	}
-	closi(fildes);
+	close(fildes);
 }
