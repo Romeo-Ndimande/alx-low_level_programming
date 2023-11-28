@@ -25,7 +25,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (buffer == NULL)
 	{
 		close(fildes);
-		return (0)
+		return (0);
 	}
 	lenr = read(fildes, buffer, letters);
 	close(fildes);
@@ -39,7 +39,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	free(buffer);
 
 	if (lenr != lenw)
-		return(0);
+		return (0);
 	return (lenw);
 }
 
