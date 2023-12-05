@@ -6,7 +6,7 @@
  * @n: The integer for the new node to contain.
  *
  * Return: NULL if the function fails,
- * 	   the address of the new element if it does not
+ * the address of the new element if it does not
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
