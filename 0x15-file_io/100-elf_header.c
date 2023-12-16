@@ -1,5 +1,8 @@
 #include "main.h"
 
+/*
+ * File: 100-elf_header.c
+ */
 /**
  * check_elf - Checks if a file is an ELF file.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
@@ -52,7 +55,7 @@ void print_magic(unsigned char *e_ident)
  */
 void print_class(unsigned char *e_ident)
 {
-	printf("  Class:                      ");
+	printf("  Class:                             ");
 
 	switch (e_ident[EI_CLASS])
 	{
@@ -100,7 +103,7 @@ void print_data(unsigned char *e_ident)
  */
 void print_version(unsigned char *e_ident)
 {
-	printf("  Version:                       %d",
+	printf("  Version:                           %d",
 	       e_ident[EI_VERSION]);
 
 	switch (e_ident[EI_VERSION])
